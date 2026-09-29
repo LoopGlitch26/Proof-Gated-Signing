@@ -1,0 +1,79 @@
+{
+ "contracts": {
+  "USDC": [
+   "ERC20",
+   "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  ],
+  "WETH": [
+   "ERC20",
+   "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+  ],
+  "DAI": [
+   "ERC20",
+   "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+  ],
+  "TAX": [
+   "FeeToken",
+   "0x2E983A1Ba5e8b38AAAeC4B440B9dDcFBf72E15d1"
+  ],
+  "POOL_UW": [
+   "Pool",
+   "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"
+  ],
+  "POOL_DU": [
+   "Pool",
+   "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9"
+  ],
+  "POOL_WD": [
+   "Pool",
+   "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+  ],
+  "POOL_UW2": [
+   "Pool",
+   "0x0165878A594ca255338adfa4d48449f69242Eb8F"
+  ],
+  "POOL_TU": [
+   "Pool",
+   "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853"
+  ],
+  "FAKEPOOL": [
+   "FakePool",
+   "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6"
+  ],
+  "PROXYPOOL": [
+   "Pool",
+   "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0"
+  ],
+  "PROXYPOOL_RAW": [
+   "UpgradeableProxy",
+   "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0"
+  ],
+  "EVIL_IMPL": [
+   "EvilPoolImpl",
+   "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e"
+  ],
+  "DRAINER": [
+   "Drainer",
+   "0x9A676e781A523b5d0C0e43731313A708CB607508"
+  ],
+  "BRIDGE": [
+   "FakeBridge",
+   "0x0B306BF915C4d645ff596e518fAf3F9669b97016"
+  ],
+  "WALLET": [
+   "AgentWallet",
+   "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1"
+  ],
+  "VAULT": [
+   "Vault",
+   "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE"
+  ]
+ },
+ "lookalike": "0x90f79Ba4c123B1612DD272d1371c17149d93B906",
+ "roles": {
+  "attacker": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "alice": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+  "bob": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+  "searcher": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc"
+ }
+}

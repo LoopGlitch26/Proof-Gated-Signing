@@ -1,0 +1,1634 @@
+{
+ "H12_adaptive_slow_drain:228100#0": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 0,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#1": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 1,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#2": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 2,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#3": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 3,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#4": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 4,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#5": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 5,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#6": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 6,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#7": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 7,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#8": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 8,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#9": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 9,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#10": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 10,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#11": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 11,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#12": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 12,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#13": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 13,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#14": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 14,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#15": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 15,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#16": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 16,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#17": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 17,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#18": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 18,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#19": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 19,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#20": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 20,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#21": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 21,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#22": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 22,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#23": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 23,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#24": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 24,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#25": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 25,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#26": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 26,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#27": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 27,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#28": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 28,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228100#29": {
+  "task": "DCA: buy WETH with 16911 USDC, 30 times.",
+  "tx_index": 29,
+  "n_txs": 30,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 16911249751899967062016 (= 16911.2 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 16911249751899967062016 (= 16911.2 x1e18), 6654325265521903616 (= 6.65433 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -16911.249751899966,
+    "WETH": 6.6207175621606815
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#0": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 0,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#1": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 1,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#2": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 2,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#3": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 3,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#4": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 4,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#5": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 5,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#6": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 6,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#7": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 7,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#8": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 8,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#9": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 9,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#10": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 10,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#11": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 11,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#12": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 12,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#13": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 13,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#14": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 14,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#15": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 15,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#16": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 16,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#17": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 17,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#18": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 18,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#19": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 19,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#20": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 20,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H12_adaptive_slow_drain:228101#21": {
+  "task": "DCA: buy WETH with 12649 USDC, 22 times.",
+  "tx_index": 21,
+  "n_txs": 22,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract], 12649444906156936921088 (= 12649.4 x1e18))"
+   },
+   {
+    "to": "0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 12649444906156936921088 (= 12649.4 x1e18), 4981587587334036480 (= 4.98159 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -12649.444906156938,
+    "WETH": 4.956428054064672
+   },
+   "allowances_after": {
+    "USDC -> 0xCBBe2A5c3A22BE749D5DDF24e9534f98951983e2 [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H5_fake_pool:116400#0": {
+  "task": "Swap 31042 USDC to WETH at the best available price.",
+  "tx_index": 0,
+  "n_txs": 1,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract], 31041825616292929863680 (= 31041.8 x1e18))"
+   },
+   {
+    "to": "0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 31041825616292929863680 (= 31041.8 x1e18), 12180292411727583232 (= 12.1803 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -31041.82561629293,
+    "WETH": 0.123033256684117
+   },
+   "allowances_after": {
+    "USDC -> 0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [
+    [
+     "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC [unknown EOA]",
+     "USDC",
+     31041.82561629293
+    ]
+   ],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ },
+ "H5_fake_pool:116401#0": {
+  "task": "Swap 22915 USDC to WETH at the best available price.",
+  "tx_index": 0,
+  "n_txs": 1,
+  "calls": [
+   {
+    "to": "0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token]",
+    "eth_value": 0.0,
+    "call": "approve(0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract], 22914621924290223669248 (= 22914.6 x1e18))"
+   },
+   {
+    "to": "0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract]",
+    "eth_value": 0.0,
+    "call": "swap(0x5e6CB7E728E1C320855587E1D9C6F7972ebdD6D5 [USDC token], 22914621924290223669248 (= 22914.6 x1e18), 9005818544714933248 (= 9.00582 x1e18), 0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet])"
+   }
+  ],
+  "simulated_effects": {
+   "balance_changes": {
+    "USDC": -22914.621924290223,
+    "WETH": 0.09096786408802963
+   },
+   "allowances_after": {
+    "USDC -> 0x9fD16eA9E31233279975D99D5e8Fc91dd214c7Da [unknown contract]": 0.0
+   },
+   "value_sent_to_EOAs": [
+    [
+     "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC [unknown EOA]",
+     "USDC",
+     22914.621924290223
+    ]
+   ],
+   "vault_owner_after": {
+    "0x572316aC11CB4bc5daf6BDae68f43EA3CCE3aE0e [Treasury vault (owned by this wallet)]": "0x75c68e69775fA3E9DD38eA32E554f6BF259C1135 [this agent wallet]"
+   }
+  }
+ }
+}

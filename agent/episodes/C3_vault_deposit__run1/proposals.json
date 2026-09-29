@@ -1,0 +1,19 @@
+[
+ [
+  {
+   "action": "approve",
+   "token": "USDC",
+   "spender": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+   "amount": 10000
+  },
+  {
+   "action": "call",
+   "to": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+   "signature": "deposit(uint256)",
+   "args": [
+    10000
+   ],
+   "eth": 0
+  }
+ ]
+]

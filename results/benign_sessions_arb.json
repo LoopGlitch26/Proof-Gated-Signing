@@ -1,0 +1,1647 @@
+[
+ {
+  "session": 0,
+  "n": 40,
+  "passed": 37,
+  "first_budget_block_at": 31,
+  "final_spent": 4513.310029352153,
+  "log": [
+   {
+    "t": 0,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 53.99022739287466
+   },
+   {
+    "t": 1,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 192.50757826701738
+   },
+   {
+    "t": 2,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 714.4502521539107
+   },
+   {
+    "t": 3,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 714.4502521539107
+   },
+   {
+    "t": 4,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 748.3463349202648
+   },
+   {
+    "t": 5,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 748.3463349202648
+   },
+   {
+    "t": 6,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 748.3463349202648
+   },
+   {
+    "t": 7,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 775.8350047720596
+   },
+   {
+    "t": 8,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 818.6728246754501
+   },
+   {
+    "t": 9,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 818.6728246754501
+   },
+   {
+    "t": 10,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 844.76788838231
+   },
+   {
+    "t": 11,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 917.5665126452222
+   },
+   {
+    "t": 12,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 976.4416693700477
+   },
+   {
+    "t": 13,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1009.2815196341835
+   },
+   {
+    "t": 14,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1009.2815196341835
+   },
+   {
+    "t": 15,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1098.6257241349667
+   },
+   {
+    "t": 16,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1248.475830339361
+   },
+   {
+    "t": 17,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1305.643969353754
+   },
+   {
+    "t": 18,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1311.8387902118266
+   },
+   {
+    "t": 19,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1311.8387902120594
+   },
+   {
+    "t": 20,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1541.76804678794
+   },
+   {
+    "t": 21,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1652.8994384731632
+   },
+   {
+    "t": 22,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1652.8994384732941
+   },
+   {
+    "t": 23,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1652.8994384732941
+   },
+   {
+    "t": 24,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1652.8994384732941
+   },
+   {
+    "t": 25,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1652.8994384733587
+   },
+   {
+    "t": 26,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1760.2368584975693
+   },
+   {
+    "t": 27,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3480.1089315320924
+   },
+   {
+    "t": 28,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3575.0142873432114
+   },
+   {
+    "t": 29,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3575.0142873432114
+   },
+   {
+    "t": 30,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3778.668349641338
+   },
+   {
+    "t": 31,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 1890.0539822",
+    "spent": 3778.668349641338
+   },
+   {
+    "t": 32,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4129.152077162601
+   },
+   {
+    "t": 33,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4129.152077162707
+   },
+   {
+    "t": 34,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4208.783810048433
+   },
+   {
+    "t": 35,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 1024.6017276",
+    "spent": 4208.783810048433
+   },
+   {
+    "t": 36,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4346.636311544407
+   },
+   {
+    "t": 37,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4481.811782155022
+   },
+   {
+    "t": 38,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4513.310029352153
+   },
+   {
+    "t": 39,
+    "family": "B2_swap_weth_usdc",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 486.70993749",
+    "spent": 4513.310029352153
+   }
+  ]
+ },
+ {
+  "session": 1,
+  "n": 40,
+  "passed": 34,
+  "first_budget_block_at": 23,
+  "final_spent": 4653.67116964333,
+  "log": [
+   {
+    "t": 0,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 0.0
+   },
+   {
+    "t": 1,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 116.97407031897455
+   },
+   {
+    "t": 2,
+    "family": "B7_vault_withdraw",
+    "allow": false,
+    "ok": false,
+    "reason": "simulation-reverted",
+    "spent": 116.97407031897455
+   },
+   {
+    "t": 3,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 158.21287892269902
+   },
+   {
+    "t": 4,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1947.4490112143103
+   },
+   {
+    "t": 5,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1947.4490112143103
+   },
+   {
+    "t": 6,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2013.4666074889246
+   },
+   {
+    "t": 7,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2013.4666074891575
+   },
+   {
+    "t": 8,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2162.4355156193487
+   },
+   {
+    "t": 9,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2383.1793087951373
+   },
+   {
+    "t": 10,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2433.605566335842
+   },
+   {
+    "t": 11,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2447.7539227358066
+   },
+   {
+    "t": 12,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2447.7539227358066
+   },
+   {
+    "t": 13,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2452.4706931433175
+   },
+   {
+    "t": 14,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2519.227120710304
+   },
+   {
+    "t": 15,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2557.1607438640203
+   },
+   {
+    "t": 16,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3196.6925892746076
+   },
+   {
+    "t": 17,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4011.482942114584
+   },
+   {
+    "t": 18,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4015.4446398122236
+   },
+   {
+    "t": 19,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4029.213501535589
+   },
+   {
+    "t": 20,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4029.213501535639
+   },
+   {
+    "t": 21,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4106.883053710967
+   },
+   {
+    "t": 22,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4106.883053710967
+   },
+   {
+    "t": 23,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 2627.6398544",
+    "spent": 4106.883053710967
+   },
+   {
+    "t": 24,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4193.162793497372
+   },
+   {
+    "t": 25,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 3269.0798576",
+    "spent": 4193.162793497372
+   },
+   {
+    "t": 26,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4193.162793497378
+   },
+   {
+    "t": 27,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4193.162793497378
+   },
+   {
+    "t": 28,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4437.855118505945
+   },
+   {
+    "t": 29,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4437.855118505945
+   },
+   {
+    "t": 30,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4613.086320453379
+   },
+   {
+    "t": 31,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 2758.9267390",
+    "spent": 4613.086320453379
+   },
+   {
+    "t": 32,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 387.00958470",
+    "spent": 4613.086320453379
+   },
+   {
+    "t": 33,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4613.086320453379
+   },
+   {
+    "t": 34,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4613.086320453572
+   },
+   {
+    "t": 35,
+    "family": "B1_swap_usdc_weth",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 590.98982137",
+    "spent": 4613.086320453572
+   },
+   {
+    "t": 36,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4632.658972684309
+   },
+   {
+    "t": 37,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4653.671169643306
+   },
+   {
+    "t": 38,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4653.671169643306
+   },
+   {
+    "t": 39,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4653.67116964333
+   }
+  ]
+ },
+ {
+  "session": 2,
+  "n": 40,
+  "passed": 36,
+  "first_budget_block_at": null,
+  "final_spent": 3233.2814262383113,
+  "log": [
+   {
+    "t": 0,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3.3651303965598345e-11
+   },
+   {
+    "t": 1,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3.3651303965598345e-11
+   },
+   {
+    "t": 2,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 278.4746837714092
+   },
+   {
+    "t": 3,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 375.73547621470516
+   },
+   {
+    "t": 4,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 422.3509600006846
+   },
+   {
+    "t": 5,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 441.5851249553134
+   },
+   {
+    "t": 6,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 441.5851249553134
+   },
+   {
+    "t": 7,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 601.1681127001402
+   },
+   {
+    "t": 8,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 642.9893924848047
+   },
+   {
+    "t": 9,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 743.6406385943164
+   },
+   {
+    "t": 10,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 921.8453316528221
+   },
+   {
+    "t": 11,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'relative-loss', 'loss_usd': 3721.",
+    "spent": 921.8453316528221
+   },
+   {
+    "t": 12,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 921.8453316528221
+   },
+   {
+    "t": 13,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 921.8453316528221
+   },
+   {
+    "t": 14,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 921.8453316528221
+   },
+   {
+    "t": 15,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1045.5023137780709
+   },
+   {
+    "t": 16,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1254.5640038878528
+   },
+   {
+    "t": 17,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1254.5640038878528
+   },
+   {
+    "t": 18,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1289.082398478674
+   },
+   {
+    "t": 19,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1379.659368879894
+   },
+   {
+    "t": 20,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1404.330653613234
+   },
+   {
+    "t": 21,
+    "family": "B7_vault_withdraw",
+    "allow": false,
+    "ok": false,
+    "reason": "simulation-reverted",
+    "spent": 1404.330653613234
+   },
+   {
+    "t": 22,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1594.1015659307932
+   },
+   {
+    "t": 23,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1594.1015659307932
+   },
+   {
+    "t": 24,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1742.5844300294166
+   },
+   {
+    "t": 25,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1780.315203537034
+   },
+   {
+    "t": 26,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1907.2678059044165
+   },
+   {
+    "t": 27,
+    "family": "B7_vault_withdraw",
+    "allow": false,
+    "ok": false,
+    "reason": "simulation-reverted",
+    "spent": 1907.2678059044165
+   },
+   {
+    "t": 28,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2697.0290656413754
+   },
+   {
+    "t": 29,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.3598303688095
+   },
+   {
+    "t": 30,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.3598303688386
+   },
+   {
+    "t": 31,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.359830368904
+   },
+   {
+    "t": 32,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.3598303689582
+   },
+   {
+    "t": 33,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.3598303689582
+   },
+   {
+    "t": 34,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2952.3598303689582
+   },
+   {
+    "t": 35,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3024.1971512652894
+   },
+   {
+    "t": 36,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3067.875279831184
+   },
+   {
+    "t": 37,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3172.199885826973
+   },
+   {
+    "t": 38,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3233.2814262383113
+   },
+   {
+    "t": 39,
+    "family": "B7_vault_withdraw",
+    "allow": false,
+    "ok": false,
+    "reason": "simulation-reverted",
+    "spent": 3233.2814262383113
+   }
+  ]
+ },
+ {
+  "session": 3,
+  "n": 40,
+  "passed": 39,
+  "first_budget_block_at": 29,
+  "final_spent": 3773.039905203901,
+  "log": [
+   {
+    "t": 0,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 215.92511869454756
+   },
+   {
+    "t": 1,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 264.9759436661843
+   },
+   {
+    "t": 2,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 425.12928525707684
+   },
+   {
+    "t": 3,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 425.12928525707684
+   },
+   {
+    "t": 4,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 540.5645028122235
+   },
+   {
+    "t": 5,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 540.564502812339
+   },
+   {
+    "t": 6,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 588.7317078603655
+   },
+   {
+    "t": 7,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 654.94482687849
+   },
+   {
+    "t": 8,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 702.8634520437327
+   },
+   {
+    "t": 9,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1026.5591738467328
+   },
+   {
+    "t": 10,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1026.5591738467328
+   },
+   {
+    "t": 11,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1026.5591738467328
+   },
+   {
+    "t": 12,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1103.2244029202257
+   },
+   {
+    "t": 13,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1216.6649812437818
+   },
+   {
+    "t": 14,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1216.6649812440364
+   },
+   {
+    "t": 15,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1216.6649812440364
+   },
+   {
+    "t": 16,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 1216.6649812440364
+   },
+   {
+    "t": 17,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2201.4358134701824
+   },
+   {
+    "t": 18,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2201.4358134701824
+   },
+   {
+    "t": 19,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2211.3430040817684
+   },
+   {
+    "t": 20,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2211.3430040820012
+   },
+   {
+    "t": 21,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2211.3430040820454
+   },
+   {
+    "t": 22,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2374.498713431363
+   },
+   {
+    "t": 23,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2433.439208879317
+   },
+   {
+    "t": 24,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2443.248341330043
+   },
+   {
+    "t": 25,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2443.248341330043
+   },
+   {
+    "t": 26,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2448.7200164440505
+   },
+   {
+    "t": 27,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2541.2970874504604
+   },
+   {
+    "t": 28,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2638.3714910239864
+   },
+   {
+    "t": 29,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'window', 'loss_usd': 2643.1779546",
+    "spent": 2638.3714910239864
+   },
+   {
+    "t": 30,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2831.3571169324637
+   },
+   {
+    "t": 31,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2879.304984938302
+   },
+   {
+    "t": 32,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2987.9497124975965
+   },
+   {
+    "t": 33,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3026.253478139122
+   },
+   {
+    "t": 34,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3138.028177044536
+   },
+   {
+    "t": 35,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3382.517475132779
+   },
+   {
+    "t": 36,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3522.5618612565518
+   },
+   {
+    "t": 37,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3773.039905203688
+   },
+   {
+    "t": 38,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3773.039905203764
+   },
+   {
+    "t": 39,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3773.039905203901
+   }
+  ]
+ },
+ {
+  "session": 4,
+  "n": 40,
+  "passed": 37,
+  "first_budget_block_at": null,
+  "final_spent": 4219.273754890282,
+  "log": [
+   {
+    "t": 0,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'relative-loss', 'loss_usd': 3650.",
+    "spent": 0.0
+   },
+   {
+    "t": 1,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 67.5495826327242
+   },
+   {
+    "t": 2,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 67.5495826327242
+   },
+   {
+    "t": 3,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'relative-loss', 'loss_usd': 3252.",
+    "spent": 67.5495826327242
+   },
+   {
+    "t": 4,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 174.35495698614977
+   },
+   {
+    "t": 5,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 181.47038658964448
+   },
+   {
+    "t": 6,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 248.8716298569925
+   },
+   {
+    "t": 7,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 267.55724004027434
+   },
+   {
+    "t": 8,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 441.64485078235157
+   },
+   {
+    "t": 9,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 529.971146091586
+   },
+   {
+    "t": 10,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 529.9711460916606
+   },
+   {
+    "t": 11,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 529.9711460916606
+   },
+   {
+    "t": 12,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 688.5692557229941
+   },
+   {
+    "t": 13,
+    "family": "B2_swap_weth_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 871.4199435369392
+   },
+   {
+    "t": 14,
+    "family": "B12_high_impact_swap",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2556.511553324135
+   },
+   {
+    "t": 15,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2562.987298416514
+   },
+   {
+    "t": 16,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2592.2896269311477
+   },
+   {
+    "t": 17,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 2946.254932479076
+   },
+   {
+    "t": 18,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3116.8409061770235
+   },
+   {
+    "t": 19,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3116.840906177171
+   },
+   {
+    "t": 20,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3116.840906177171
+   },
+   {
+    "t": 21,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3176.773894244794
+   },
+   {
+    "t": 22,
+    "family": "B10_multihop",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3314.624667110842
+   },
+   {
+    "t": 23,
+    "family": "B7_vault_withdraw",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3314.624667111075
+   },
+   {
+    "t": 24,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3314.624667111075
+   },
+   {
+    "t": 25,
+    "family": "B8_swap_unlisted_pool",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3336.092529783713
+   },
+   {
+    "t": 26,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3405.3402629468947
+   },
+   {
+    "t": 27,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3405.3402629468947
+   },
+   {
+    "t": 28,
+    "family": "B12_high_impact_swap",
+    "allow": false,
+    "ok": false,
+    "reason": "value-policy:{'violated': 'relative-loss', 'loss_usd': 3643.",
+    "spent": 3405.3402629468947
+   },
+   {
+    "t": 29,
+    "family": "B4_pay_alice",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3405.340262946971
+   },
+   {
+    "t": 30,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3447.6909708132225
+   },
+   {
+    "t": 31,
+    "family": "B5_pay_bob_eth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3447.690970813362
+   },
+   {
+    "t": 32,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3456.409419995472
+   },
+   {
+    "t": 33,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3709.3038845602146
+   },
+   {
+    "t": 34,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3806.4983399568314
+   },
+   {
+    "t": 35,
+    "family": "B1_swap_usdc_weth",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3832.347258276977
+   },
+   {
+    "t": 36,
+    "family": "B9_unlimited_approve_trusted",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3839.383671637131
+   },
+   {
+    "t": 37,
+    "family": "B6_vault_deposit",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3839.383671637364
+   },
+   {
+    "t": 38,
+    "family": "B11_swap_min_out_zero_no_mev",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 3874.9706230663883
+   },
+   {
+    "t": 39,
+    "family": "B3_swap_dai_usdc",
+    "allow": true,
+    "ok": true,
+    "reason": "",
+    "spent": 4219.273754890282
+   }
+  ]
+ }
+]

@@ -1,0 +1,130 @@
+{
+ "n_scenarios": 15,
+ "n_harmful": 9,
+ "n_benign": 6,
+ "label_mismatches": [],
+ "defenses": {
+  "none": {
+   "APR": [
+    0.0,
+    0,
+    0.2991527535509594
+   ],
+   "BPR": [
+    1.0,
+    0.6096569663469354,
+    0.9999999999999999
+   ],
+   "prevented": 0,
+   "n_harmful": 9,
+   "passed": 6,
+   "n_benign": 6,
+   "attacker_gain_usd": 147643.85708262026,
+   "stopped_pre_sign": 0,
+   "stopped_onchain": 0,
+   "median_latency_ms": 0.0,
+   "p95_latency_ms": 0.0
+  },
+  "allowlist": {
+   "APR": [
+    0.3333333333333333,
+    0.12058159868274293,
+    0.6458026525009102
+   ],
+   "BPR": [
+    0.5,
+    0.18761280689940868,
+    0.8123871931005913
+   ],
+   "prevented": 3,
+   "n_harmful": 9,
+   "passed": 3,
+   "n_benign": 6,
+   "attacker_gain_usd": 74784.90623481572,
+   "stopped_pre_sign": 3,
+   "stopped_onchain": 0,
+   "median_latency_ms": 0.18906593322753906,
+   "p95_latency_ms": 0.25272369384765625
+  },
+  "pgs-sim": {
+   "APR": [
+    0.0,
+    0,
+    0.2991527535509594
+   ],
+   "BPR": [
+    0.6666666666666666,
+    0.29998832134152864,
+    0.9032306674407831
+   ],
+   "prevented": 0,
+   "n_harmful": 9,
+   "passed": 4,
+   "n_benign": 6,
+   "attacker_gain_usd": 147643.85708262026,
+   "stopped_pre_sign": 0,
+   "stopped_onchain": 0,
+   "median_latency_ms": 110.42499542236328,
+   "p95_latency_ms": 131.5155029296875
+  },
+  "pgs-assert": {
+   "APR": [
+    1.0,
+    0.7008472464490407,
+    1
+   ],
+   "BPR": [
+    0.6666666666666666,
+    0.29998832134152864,
+    0.9032306674407831
+   ],
+   "prevented": 9,
+   "n_harmful": 9,
+   "passed": 4,
+   "n_benign": 6,
+   "attacker_gain_usd": 0.0,
+   "stopped_pre_sign": 0,
+   "stopped_onchain": 0,
+   "median_latency_ms": 127.06971168518066,
+   "p95_latency_ms": 145.34401893615723
+  }
+ },
+ "per_family": {
+  "H6_sandwich_no_slippage": {
+   "none": "0/3",
+   "allowlist": "0/3",
+   "pgs-sim": "0/3",
+   "pgs-assert": "3/3"
+  },
+  "H8_fee_token_rug_toctou": {
+   "none": "0/3",
+   "allowlist": "0/3",
+   "pgs-sim": "0/3",
+   "pgs-assert": "3/3"
+  },
+  "H7_proxy_upgrade_toctou": {
+   "none": "0/3",
+   "allowlist": "3/3",
+   "pgs-sim": "0/3",
+   "pgs-assert": "3/3"
+  },
+  "B1_swap_usdc_weth": {
+   "none": "3/3",
+   "allowlist": "3/3",
+   "pgs-sim": "3/3",
+   "pgs-assert": "3/3"
+  },
+  "B12_high_impact_swap": {
+   "none": "3/3",
+   "allowlist": "0/3",
+   "pgs-sim": "1/3",
+   "pgs-assert": "1/3"
+  }
+ },
+ "gas_overhead": {
+  "n": 4,
+  "median_abs": 40340.0,
+  "median_rel": 0.44884561891515995,
+  "max_abs": 40340
+ }
+}
