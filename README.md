@@ -1,237 +1,118 @@
-<div align="center">
+# Proof-Gated Signing
 
-# 🛡️ Proof-Gated Signing
+Transaction guards for AI agents that hold wallets.
 
-### Solver-checked transaction guards that hold under state drift, for onchain AI agents
+AI agents that control crypto wallets read content an attacker can write: emails, docs, token metadata, tool output. Sooner or later one of them will be talked into proposing a bad transaction. This repository contains a guard that sits between the agent and its signing key. It also contains the testbed and experiments behind the paper [*Proof-Gated Signing: Solver-Checked Transaction Guards that Hold Under State Drift for Onchain AI Agents*](paper/main.pdf).
 
-*If an AI agent is tricked into signing something harmful, the transaction either still obeys your policy when it executes, or it doesn't execute at all.*
+## The problem
 
-<br/>
+The usual defense is to check a transaction before signing it. That can be an allowlist of known contracts, a second LLM that reviews the call, or a simulation that previews the outcome. All three share one weakness: they check the chain as it is *now*, but the transaction executes *later*. In between, an attacker can sandwich the trade, upgrade a contract the agent is about to call, or raise the transfer fee on a token it is sending. The check was correct, but the transaction that actually ran was different.
 
-![Solidity](https://img.shields.io/badge/Solidity-0.8.26-363636?logo=solidity)
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
-![Z3](https://img.shields.io/badge/SMT-Z3-5C2D91)
-![Hardhat](https://img.shields.io/badge/Hardhat-local%20chain-FFF100?logo=ethereum&logoColor=black)
-![Scenarios](https://img.shields.io/badge/scenarios-260-2a78d6)
-![Reproducible](https://img.shields.io/badge/rerun-1%2C300%2F1%2C300%20identical-1baf7a)
+We call this **state drift**. In our experiments, a simulation-based guard missed every drift attack we tried.
 
-**[📄 Paper](paper/main.pdf)** · **[🧠 How it works](#how)** · **[📊 Results](#results)** · **[⚠️ Limits](#limits)** · **[⚡ Quick start](#quickstart)**
+## The idea
 
-</div>
+Proof-Gated Signing (PGS) turns the pre-signing check into something that still holds at execution time:
 
----
-
-## 💡 The problem in 30 seconds
-
-AI agents are starting to hold wallets: they pay invoices, swap tokens and manage treasuries. They also read things attackers can write, such as emails, docs, token metadata and tool outputs. An injected instruction can make the agent propose a harmful transaction.
-
-The usual last line of defense is to **check the transaction before signing**. It comes in three forms:
-
-| Check | What it does | Where it breaks |
-|---|---|---|
-| 📋 **Allowlist** | Only known contracts and recipients | Blind to known-but-mutable contracts and honest-but-new ones |
-| 🤖 **LLM reviewer** | A second model judges "does this look right?" | Blind to things that look legitimate (fake bridges, fake pools) |
-| 🔮 **Simulation** | Dry-run it and see the outcome | **Checks the past.** The chain can change before execution |
-
-The last row is the core insight. A pre-signing check describes the chain **when it was checked**. The transaction runs **later**, and in between an attacker can:
-
-- 🥪 **sandwich** your trade to worsen your price,
-- 🔄 **upgrade** a contract you're about to call into a draining one,
-- 💸 **raise the fee** on a token you're sending to 90%.
-
-The check was right, and the thing that ran was different. We call this **state drift**.
-
-> 🏦 **Analogy:** the bank approves your cheque, then the scammer changes the amount *after approval but before it clears.*
-
----
-
-<a id="how"></a>
-
-## 🧠 How it works
+1. **Simulate** the proposed transaction on the current state.
+2. **Extract its effects:** balance changes for every tracked asset, leftover token approvals, ownership of contracts the wallet controls, and what each payee actually receives.
+3. **Check a policy with Z3**, for every price inside the oracle's uncertainty band. Example policy: lose at most 3% of what you send, at most $5k per session, and pay only approved recipients. If the check fails, the solver returns a concrete counterexample.
+4. **Compile post-conditions.** Derive bounds such as "the wallet must end up with at least X WETH" and "Alice must receive at least Y USDC", then have the solver prove that *any* outcome within those bounds satisfies the policy.
+5. **Enforce them on-chain.** The wallet runs the transaction and checks the bounds in the same atomic call. If anything drifted far enough to break a bound, the whole transaction reverts.
 
 ```mermaid
 flowchart LR
-    A["🤖 LLM agent<br/><sub>reads untrusted content</sub>"] -->|proposed tx| S
-
-    subgraph G["🛡️ Guard (holds the signing key)"]
-        direction LR
-        S["1️⃣ Simulate<br/><sub>on current state</sub>"] --> E["2️⃣ Extract effects<br/><sub>balances · allowances<br/>owners · receipts</sub>"]
-        E --> P["3️⃣ Prove policy<br/><sub>Z3: ∀ price in band</sub>"]
-        P -->|valid| C["4️⃣ Compile & prove<br/><sub>post-conditions Φ<br/>Φ ⇒ policy</sub>"]
+    A[Agent] -->|proposed tx| S[Simulate]
+    subgraph Guard
+        S --> E[Extract effects] --> P[Check policy with Z3] --> C[Compile post-conditions]
     end
-
-    P -. counterexample → refuse .-> A
-    C -->|"sign (tx, Φ)"| W["🔐 5️⃣ AgentWallet<br/><sub>executeChecked:<br/>run tx, then check Φ atomically</sub>"]
-    X["😈 Attacker<br/><sub>front-run · upgrade · fee change</sub>"] -->|drift| CH["⛓️ Chain state<br/>at inclusion"]
-    CH --> W
-    W --> O{"✅ executes ⇒ policy holds<br/>❌ otherwise ⇒ reverts"}
-
-    style G fill:#eef4fc,stroke:#2a78d6,stroke-dasharray: 5 5
-    style W fill:#eafaf2,stroke:#1baf7a
-    style X fill:#fdeeee,stroke:#e34948
+    P -. counterexample .-> A
+    C -->|signed tx + bounds| W[AgentWallet.executeChecked]
+    D[Attacker drift] --> CH[Chain state at inclusion] --> W
+    W --> R[Executes within policy, or reverts]
 ```
 
-| Step | What happens |
-|---|---|
-| **1. Simulate** | Run the proposed batch on a snapshot of the current chain |
-| **2. Extract effects** | Balance change of every tracked asset, leftover token approvals, who owns what, what each payee actually received |
-| **3. Prove the policy** | Z3 checks *"loss ≤ 3% of outflow"*, *"session loss ≤ $5k"* and *"only pay approved payees"* **for every price in the oracle's uncertainty band**. If it fails, you get a concrete counterexample |
-| **4. Compile guarantees** ⭐ | Turn the assumptions into hard bounds: *"wallet must gain ≥ X WETH"*, *"Alice must receive ≥ Y USDC"*, *"no leftover approvals"*, *"we still own the vault"*. The solver then **proves that any outcome within these bounds satisfies the policy** |
-| **5. Enforce on-chain** | The wallet runs the transaction and checks the bounds in the **same atomic call**. Anything broken reverts everything |
+So if the chain changes between check and execution, the transaction either still respects the policy or it doesn't happen.
 
-> **The guarantee (Theorem 1):** if the transaction executes, the policy held for every price in the band, no matter what changed on-chain between check and execution.
+This is related to slippage protection (`minOut`), but it goes further. A `minOut` covers one token of one swap, and the agent, which may be the compromised party, sets it. PGS derives its bounds independently and covers every tracked asset, payee receipts, approvals and ownership. The bounds also come with a proof that they imply the wallet-level policy.
 
-### 🆚 "Isn't this just slippage protection?"
+## Results
 
-No. `minOut` is the closest cousin, but:
+We ran 260 scenarios on a local chain: 14 attack families and 12 kinds of normal activity, 10 randomized variants each. An attack counts as successful only if attacker-controlled accounts actually gained value. That rule is independent of the policy being tested.
 
-| | `minOut` slippage limit | Proof-Gated Signing |
-|---|---|---|
-| Covers | one token of one swap | **every** tracked asset + payee receipts + approvals + ownership |
-| Set by | the (possibly tricked) agent | an **independent guard** |
-| Tied to a policy? | no | **proved** to imply the whole-wallet policy under price uncertainty |
-| Catches a hidden extra transfer in a batch | ❌ | ✅ |
-| Catches a fee rug on a *payment* | ❌ | ✅ |
-
----
-
-<a id="results"></a>
-
-## 📊 Results
-
-**260 scenarios**: 14 attack families × 10 variants + 12 benign families × 10 variants. Harm is measured from **attacker balances**, never from the policy, so the guard can't grade its own homework.
-
-<div align="center">
-
-| Defense | 🛡️ Attacks prevented | ✅ Benign passed | 💰 Attacker gain |
-|:--|:--:|:--:|--:|
-| No guard | 0.0% | 100% | $12.18M |
+| Defense | Attacks prevented | Normal transactions allowed | Total attacker gain |
+|---|---|---|---|
+| No guard | 0% | 100% | $12.18M |
 | Static allowlist | 71.4% | 83.3% | $558k |
 | Simulation only | 57.9% | 97.5% | $855k |
-| PGS without receipt checks *(ablation)* | 86.4% | 97.5% | $80k |
-| **Proof-Gated Signing** | **93.6%** | **97.5%** | **$42k** |
+| PGS without payee receipt checks | 86.4% | 97.5% | $80k |
+| **PGS** | **93.6%** | **97.5%** | **$42k** |
 
-<sub>Rates are on <b>this suite</b> (140 harmful / 120 benign scenarios we designed). Wilson 95% CIs are in the paper.</sub>
+These rates are for this suite of 140 attacks and 120 normal scenarios, which we designed ourselves. They show which mechanisms stop which kinds of attack. They are not an estimate of real-world performance.
 
-<img src="assets/results.png" width="820" alt="Attack prevention and benign pass rates with 95% confidence intervals"/>
+![Attack prevention and benign pass rates](assets/results.png)
 
-<sub>Comparison including LLM judges, on the 120-scenario subset where they were run.</sub>
+Main observations:
 
-</div>
+- **Drift is what simulation misses.** The simulation-only guard missed all 50 drift scenarios. Under PGS, all 50 ended with no attacker gain. Forty reverted on-chain. In the other ten, an attacker who read the guard's bounds from the mempool found nothing profitable to do within them.
+- **A clean simulation can mislead a reviewer.** An LLM judge given the (pre-drift) simulation approved a malicious contract upgrade 5 times out of 5, compared with 2 out of 5 without it.
+- **Payments need their own check.** Without receipt checks, a fee-on-transfer token skimmed 30–90% of payments and none were blocked. With them, all ten reverted.
+- **One attack is bounded, not prevented.** An attacker who drains slowly, keeping every step inside policy, was capped by the session budget: at most $4.76k against a $5k limit, versus up to $10.8k unguarded.
+- **LLM wallet agents resisted most injections on their own.** We tested Claude Opus and Haiku. What got through was a fake bridge, which looks legitimate at the call level. PGS blocked it.
+- **Cost:** about 41k extra gas per transaction and 0.1–0.2 s per check.
 
-### 🔑 Key findings
+The full breakdown by attack family, with confidence intervals and the LLM-judge comparison, is in the paper.
 
-- 🌊 **State drift is real, and simulation can't see it.** Simulation-only guarding missed **all 50** drift scenarios. Under PGS, **all 50 ended with $0 attacker gain**: 40 reverted on-chain, and in 10 a mempool-reading attacker found no profitable move within the bounds.
-- 🤖 **A clean simulation made an LLM reviewer *worse*.** Given the pre-drift simulation, the LLM judge approved the contract-upgrade attack **5/5** times, up from 2/5 without it. The simulation "looked safe."
-- 🧾 **Payee receipts matter.** Without them, a fee-on-transfer token silently skimmed 30–90% of payments (**0/10** blocked). With them, **10/10** reverted.
-- 🐢 **The one thing PGS can't prevent is bounded.** An attacker who drains slowly, with every step inside policy, was capped at **≤ $4.76k** by the $5k session budget (vs. up to $10.8k unguarded).
-- 🧪 **Real LLM wallet agents** (Claude Opus & Haiku) resisted most injections on their own. What got through was the **fake bridge**, which looks legitimate. PGS blocked it.
-- ⚡ **Cost:** ~**41k gas** extra per transaction (≈ $0.10–$3 depending on gas price) and **0.1–0.2 s** per check.
+## What it doesn't cover
 
-<details>
-<summary><b>📈 The adaptive slow-drain attack, bounded by the session budget</b></summary>
-<br/>
-<img src="assets/slow_drain.png" width="480" alt="Attacker gain per variant, no guard vs PGS, with $5k session budget line"/>
-</details>
+The guarantee covers tracked assets, payee receipts, approvals and ownership, for every price in the oracle band and under any state change between check and execution. It does not cover:
 
-<details>
-<summary><b>🧨 All 14 attack families and how each ended under PGS</b></summary>
+- **Assets the guard doesn't track**, such as NFTs or positions without a balance view. Unpriced token flows are refused instead.
+- **Off-chain signatures** such as permits, which never pass through the transaction path.
+- **Losses that stay within policy.** These are only capped per session.
+- **Drift smaller than the post-condition tolerance**, about 1% of the inflow by default.
+- **A badly chosen policy, a wrong oracle band, or an agent that holds the signing key itself.**
 
-| ID | Attack | Kind | Outcome under PGS |
-|---|---|---|---|
-| H1 | Invoice paid to attacker | intent | 🚫 refused before signing |
-| H2 | Look-alike (poisoned) address | intent | 🚫 refused before signing |
-| H3 | "Airdrop claim" drainer | intent | 🚫 refused before signing |
-| H4 | Latent unlimited approval | intent | 🚫 refused before signing |
-| H5 | Fake pool with honest quotes | intent | 🚫 refused before signing |
-| H6 | Sandwich of an unprotected swap | **drift** | ⛓️ reverted on-chain |
-| H7 | Proxy upgraded to drainer before inclusion | **drift** | ⛓️ reverted on-chain |
-| H8 | Token fee rugged before inclusion | **drift** | ⛓️ reverted on-chain |
-| H9 | Vault ownership transfer | intent | 🚫 refused before signing |
-| H10 | Hidden transfer inside a legit batch | intent | 🚫 refused before signing |
-| H11 | Fake bridge | intent | 🚫 refused before signing |
-| H12 | Slow drain, every step in-policy | adaptive | 🟡 **bounded** by session budget |
-| H13 | Sandwich by an attacker who reads the guard's bounds | **drift** + adaptive | ✅ executed safely, $0 extractable |
-| H14 | Fee rug on a *payment* | **drift** | ⛓️ reverted on-chain (receipt check) |
+The testbed is also a simplified local chain with attacks we wrote. Replaying real exploits on a mainnet fork, and testing against a held-out attack set, are the obvious next steps.
 
-</details>
-
----
-
-<a id="limits"></a>
-
-## ⚠️ What it does *not* do
-
-Being explicit about the boundary matters more than the headline number.
-
-| ✅ Guaranteed | 🟡 Bounded, not prevented | ❌ Not covered |
-|---|---|---|
-| Value policy on tracked assets, for all prices in the band | Losses that stay within per-tx policy (capped per session) | Untracked assets (NFTs, exotic positions) |
-| Payees receive ≥ credited amount | Drift within the tolerance τ (≤ ~1% of inflow) | Off-chain signatures (e.g. permits) |
-| No leftover approvals beyond simulated | | A badly chosen policy or wrong oracle band |
-| Owned contracts keep their owner | | An agent that holds the key itself |
-| **All of the above under arbitrary state drift** | | |
-
-Also note that the test world is a **simplified local chain** with attacks we designed. Mainnet-fork replays and a held-out attack set are future work.
-
----
-
-<a id="quickstart"></a>
-
-## ⚡ Quick start
+## Running it
 
 ```bash
-# 1. install
 npm i solc@0.8.26 hardhat@2
 pip install z3-solver web3 matplotlib
 
-# 2. compile contracts & start a local chain
-node compile.js
-./node.sh 8545
+node compile.js          # compile contracts
+./node.sh 8545           # start a local Hardhat node
 
-# 3. run the full evaluation (260 scenarios × 5 defenses, ~15-20 min)
-python3 eval/run.py --variants 10
-
-# 4. summarize with confidence intervals
-python3 eval/summarize.py
+python3 eval/run.py --variants 10    # all scenarios under all defenses (~15-20 min)
+python3 eval/summarize.py            # tables and confidence intervals
 ```
 
-<details>
-<summary><b>More experiments</b></summary>
+Other experiments:
 
 ```bash
-python3 eval/session.py --sessions 5 --length 40 --arb   # benign multi-tx sessions (security ↔ liveness)
-python3 agent/eval_episodes.py --port 8545               # replay LLM wallet-agent proposals under each defense
-python3 eval/figures.py                                   # regenerate paper figures
-```
-</details>
-
----
-
-## 🗂️ Repository map
-
-```
-📦 Proof-Gated-Signing
-├── 📜 contracts/Testbed.sol     tokens, pools, vault, attack contracts, AgentWallet.executeChecked
-├── 🛡️ pgs/
-│   ├── guard.py                 simulate → extract effects → prove (Z3) → compile post-conditions
-│   ├── scenarios.py             14 attack + 12 benign families
-│   ├── defenses.py              no guard · allowlist · PGS-sim · PGS · ablation · LLM-judge replay
-│   └── world.py                 deploys the test world on a local chain
-├── 🧪 eval/
-│   ├── run.py                   runs every scenario under every defense
-│   ├── summarize.py             tables + Wilson 95% CIs
-│   ├── session.py               benign multi-transaction sessions
-│   ├── judge_prompt.md          LLM-judge instructions
-│   └── figures.py               paper figures
-├── 🤖 agent/                    CLI + episodes for LLM wallet agents, offline replay
-├── 📊 results/                  raw per-run logs (jsonl), summaries, judge I/O, agent proposals
-└── 📄 paper/                    LaTeX source + PDF
+python3 eval/session.py --sessions 5 --length 40 --arb   # long runs of normal activity
+python3 agent/eval_episodes.py --port 8545               # replay LLM agent proposals
+python3 eval/figures.py                                  # regenerate figures
 ```
 
----
+A fresh rerun reproduced all 1,300 runs exactly.
 
-## 📚 Citation
+## Layout
+
+```
+contracts/Testbed.sol   tokens, pools, vault, attack contracts, and AgentWallet.executeChecked
+pgs/guard.py            simulation, effect extraction, Z3 checks, post-condition compilation
+pgs/scenarios.py        attack and benign scenario families
+pgs/defenses.py         baselines and PGS variants
+pgs/world.py            deploys the test world
+eval/                   experiment runners, summaries, figures, LLM-judge prompt
+agent/                  CLI and episodes for the LLM wallet agents
+results/                raw per-run logs and summaries
+paper/                  LaTeX source and PDF
+```
+
+## Citation
 
 ```bibtex
 @misc{ghosh2026proofgated,
@@ -241,7 +122,3 @@ python3 eval/figures.py                                   # regenerate paper fig
   note   = {Preprint}
 }
 ```
-
-<div align="center">
-<sub>Built by <a href="https://github.com/LoopGlitch26">Bravish Ghosh</a> · Questions and issues welcome</sub>
-</div>
